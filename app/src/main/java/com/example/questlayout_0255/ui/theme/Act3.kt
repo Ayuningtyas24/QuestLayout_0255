@@ -55,4 +55,19 @@ fun ActivitasPertama(modifier: Modifier) {
         Spacer(modifier = Modifier.width(30.dp))
         // Kolom teks profil menyusul di tahap berikutnya...
     }
+    Column {
+        Text(
+            stringResource(R.string.nama),
+            fontSize = 30.sp,
+            fontFamily = FontFamily.Cursive,
+            color = Color.White,
+            modifier = Modifier.padding(top = 15.dp)
+        )
+        Text(
+            stringResource(R.string.alamat),
+            fontSize = 20.sp,
+            color = Color.Yellow,
+            modifier = Modifier.padding(top = 10.dp)
+        )
+    }
 }
