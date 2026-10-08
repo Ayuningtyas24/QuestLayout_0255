@@ -6,6 +6,7 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -41,5 +42,17 @@ fun ActivitasPertama(modifier: Modifier) {
         )
     ) {
         // Konten di dalam Card akan ditambahkan selanjutnya...
+    }
+    Row {
+        val gambar = painterResource(R.drawable.logo_umy)
+        Image(
+            painter = gambar,
+            contentDescription = null,
+            modifier = Modifier
+                .size(100.dp)
+                .padding(5.dp)
+        )
+        Spacer(modifier = Modifier.width(30.dp))
+        // Kolom teks profil menyusul di tahap berikutnya...
     }
 }
