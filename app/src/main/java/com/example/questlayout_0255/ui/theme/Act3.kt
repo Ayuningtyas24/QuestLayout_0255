@@ -1,7 +1,10 @@
 package com.example.questlayout_0255.ui.theme
 
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.runtime.Composable
@@ -68,6 +71,17 @@ fun ActivitasPertama(modifier: Modifier) {
             fontSize = 20.sp,
             color = Color.Yellow,
             modifier = Modifier.padding(top = 10.dp)
+        )
+    }
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+    ) {
+        Text(
+            stringResource(R.string.copy),
+            modifier = Modifier
+                .align(Alignment.BottomCenter)
+                .padding(bottom = 50.dp)
         )
     }
 }
